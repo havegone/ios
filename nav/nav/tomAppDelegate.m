@@ -7,6 +7,16 @@
 //
 
 #import "tomAppDelegate.h"
+#import "tomRootViewController.h"
+
+
+@synthesize window = _window;
+
+
+@synthesize navController;
+
+#pragma mark -
+#pragma mark Application lifecycle
 
 @implementation tomAppDelegate
 

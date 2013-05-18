@@ -21,13 +21,29 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    
+    CGRect rect = [[UIScreen mainScreen] applicationFrame];
+    rect = [[UIScreen mainScreen] bounds];
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.viewController = [[[tomViewController alloc] initWithNibName:@"tomViewController" bundle:nil] autorelease];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+  /*
+    UIWindow * window1 = [[[UIWindow alloc] init] initWithFrame:CGRectMake(0, 80, 320, 320)];
+    window1.backgroundColor = [UIColor redColor];
+    window1.windowLevel = UIWindowLevelAlert;
+    [window1 makeKeyAndVisible];
+   
+   */
+    
+    
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

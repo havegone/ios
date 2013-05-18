@@ -16,6 +16,16 @@
 		656E729C1745CD07001DCA0C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 656E729B1745CD07001DCA0C /* Default.png */; };
 		656E729E1745CD07001DCA0C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656E729D1745CD07001DCA0C /* Default@2x.png */; };
 		656E72A01745CD07001DCA0C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656E729F1745CD07001DCA0C /* Default-568h@2x.png */; };
+		656E72A71745D298001DCA0C /* NavViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656E72A61745D298001DCA0C /* NavViewController.xib */; };
+		656E72AD1745D9AA001DCA0C /* tomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656E72AC1745D9AA001DCA0C /* tomNavViewController.m */; };
+		656E72B91745DC51001DCA0C /* tomTablePlainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656E72B71745DC51001DCA0C /* tomTablePlainViewController.m */; };
+		656E72BA1745DC51001DCA0C /* tomTablePlainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656E72B81745DC51001DCA0C /* tomTablePlainViewController.xib */; };
+		656E72BE1745DD2C001DCA0C /* tomTableGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656E72BC1745DD2C001DCA0C /* tomTableGroupViewController.m */; };
+		656E72BF1745DD2C001DCA0C /* tomTableGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656E72BD1745DD2C001DCA0C /* tomTableGroupViewController.xib */; };
+		656E72C31745DF6E001DCA0C /* tomMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656E72C11745DF6E001DCA0C /* tomMainViewController.m */; };
+		656E72C41745DF6E001DCA0C /* tomMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656E72C21745DF6E001DCA0C /* tomMainViewController.xib */; };
+		656E72C717462967001DCA0C /* tomTableDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 656E72C617462967001DCA0C /* tomTableDataModel.m */; };
+		656E72C917462F4E001DCA0C /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 656E72C817462F4E001DCA0C /* data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +42,21 @@
 		656E729B1745CD07001DCA0C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		656E729D1745CD07001DCA0C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		656E729F1745CD07001DCA0C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		656E72A61745D298001DCA0C /* NavViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavViewController.xib; sourceTree = "<group>"; };
+		656E72AB1745D9AA001DCA0C /* tomNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomNavViewController.h; sourceTree = "<group>"; };
+		656E72AC1745D9AA001DCA0C /* tomNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomNavViewController.m; sourceTree = "<group>"; };
+		656E72B61745DC51001DCA0C /* tomTablePlainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomTablePlainViewController.h; sourceTree = "<group>"; };
+		656E72B71745DC51001DCA0C /* tomTablePlainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomTablePlainViewController.m; sourceTree = "<group>"; };
+		656E72B81745DC51001DCA0C /* tomTablePlainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tomTablePlainViewController.xib; sourceTree = "<group>"; };
+		656E72BB1745DD2C001DCA0C /* tomTableGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomTableGroupViewController.h; sourceTree = "<group>"; };
+		656E72BC1745DD2C001DCA0C /* tomTableGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomTableGroupViewController.m; sourceTree = "<group>"; };
+		656E72BD1745DD2C001DCA0C /* tomTableGroupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tomTableGroupViewController.xib; sourceTree = "<group>"; };
+		656E72C01745DF6E001DCA0C /* tomMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomMainViewController.h; sourceTree = "<group>"; };
+		656E72C11745DF6E001DCA0C /* tomMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomMainViewController.m; sourceTree = "<group>"; };
+		656E72C21745DF6E001DCA0C /* tomMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tomMainViewController.xib; sourceTree = "<group>"; };
+		656E72C517462967001DCA0C /* tomTableDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomTableDataModel.h; sourceTree = "<group>"; };
+		656E72C617462967001DCA0C /* tomTableDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomTableDataModel.m; sourceTree = "<group>"; };
+		656E72C817462F4E001DCA0C /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +103,24 @@
 		656E728F1745CD07001DCA0C /* NavTableView */ = {
 			isa = PBXGroup;
 			children = (
+				656E72C517462967001DCA0C /* tomTableDataModel.h */,
+				656E72C617462967001DCA0C /* tomTableDataModel.m */,
+				656E72C01745DF6E001DCA0C /* tomMainViewController.h */,
+				656E72C11745DF6E001DCA0C /* tomMainViewController.m */,
+				656E72BB1745DD2C001DCA0C /* tomTableGroupViewController.h */,
+				656E72BC1745DD2C001DCA0C /* tomTableGroupViewController.m */,
+				656E72AB1745D9AA001DCA0C /* tomNavViewController.h */,
+				656E72AC1745D9AA001DCA0C /* tomNavViewController.m */,
+				656E72B61745DC51001DCA0C /* tomTablePlainViewController.h */,
+				656E72B71745DC51001DCA0C /* tomTablePlainViewController.m */,
 				656E72981745CD07001DCA0C /* tomAppDelegate.h */,
 				656E72991745CD07001DCA0C /* tomAppDelegate.m */,
 				656E72901745CD07001DCA0C /* Supporting Files */,
+				656E72A61745D298001DCA0C /* NavViewController.xib */,
+				656E72B81745DC51001DCA0C /* tomTablePlainViewController.xib */,
+				656E72BD1745DD2C001DCA0C /* tomTableGroupViewController.xib */,
+				656E72C21745DF6E001DCA0C /* tomMainViewController.xib */,
+				656E72C817462F4E001DCA0C /* data.plist */,
 			);
 			path = NavTableView;
 			sourceTree = "<group>";
@@ -155,6 +195,11 @@
 				656E729C1745CD07001DCA0C /* Default.png in Resources */,
 				656E729E1745CD07001DCA0C /* Default@2x.png in Resources */,
 				656E72A01745CD07001DCA0C /* Default-568h@2x.png in Resources */,
+				656E72A71745D298001DCA0C /* NavViewController.xib in Resources */,
+				656E72BA1745DC51001DCA0C /* tomTablePlainViewController.xib in Resources */,
+				656E72BF1745DD2C001DCA0C /* tomTableGroupViewController.xib in Resources */,
+				656E72C41745DF6E001DCA0C /* tomMainViewController.xib in Resources */,
+				656E72C917462F4E001DCA0C /* data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +212,11 @@
 			files = (
 				656E72961745CD07001DCA0C /* main.m in Sources */,
 				656E729A1745CD07001DCA0C /* tomAppDelegate.m in Sources */,
+				656E72AD1745D9AA001DCA0C /* tomNavViewController.m in Sources */,
+				656E72B91745DC51001DCA0C /* tomTablePlainViewController.m in Sources */,
+				656E72BE1745DD2C001DCA0C /* tomTableGroupViewController.m in Sources */,
+				656E72C31745DF6E001DCA0C /* tomMainViewController.m in Sources */,
+				656E72C717462967001DCA0C /* tomTableDataModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

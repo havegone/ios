@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
+@class tomTableDataModel;
+
 @interface tomTableGroupViewController : UITableViewController
+{
+    tomTableDataModel * dataModel;
+}
 
 @end

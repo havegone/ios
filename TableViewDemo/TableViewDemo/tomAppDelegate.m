@@ -7,6 +7,7 @@
 //
 
 #import "tomAppDelegate.h"
+#import "tomRootViewController.h"
 
 @implementation tomAppDelegate
 
@@ -20,6 +21,20 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    
+    tomRootViewController* rootViewController = [[tomRootViewController alloc] initWithNibName:@"RootView" bundle:nil];
+    
+    
+    
+    //UIButton * showBtn=[[UIButton alloc] initWithFrame:CGRectMake(50,50,30,30)];//
+    
+    
+    
+    //showBtn.titleLabel.text = @"show";
+    
+    //[self.window addSubview:showBtn];
+    
+    self.window.rootViewController = rootViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

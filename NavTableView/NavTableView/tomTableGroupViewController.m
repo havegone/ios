@@ -7,6 +7,7 @@
 //
 
 #import "tomTableGroupViewController.h"
+#import "tomTableDataModel.h"
 
 @interface tomTableGroupViewController ()
 
@@ -32,6 +33,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.navigationController.navigationBar setHidden:NO];
+    self.clearsSelectionOnViewWillAppear = NO;
+    
+    dataModel = [[tomTableDataModel alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,16 +49,22 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
+    NSLog(@"section count:%d",[dataModel sectionCount]);
+    return [dataModel sectionCount];
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+
+    
+    NSLog(@"row count:%d for:%d",[dataModel rowCount:section],section);
+    
+    return [dataModel rowCount:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -63,8 +74,17 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
+
+    
+    NSLog(@"section:%d row:%d cell for %@",indexPath.section,indexPath.row,[dataModel objectAtIndexPath:indexPath]);
+    cell.textLabel.text = [dataModel objectAtIndexPath:indexPath];
+    cell.indentationLevel = [dataModel levelAtIndexPath:indexPath];
+    cell.accessoryType =  cell.indentationLevel==0?UITableViewCellAccessoryDisclosureIndicator:UITableViewCellAccessoryNone;
     
     // Configure the cell...
+    
+    
+    
     
     return cell;
 }
@@ -120,6 +140,48 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    BOOL isFound = [dataModel checkInCellTable:indexPath];
+    if (isFound)
+    {
+        
+        NSArray* arr = [dataModel removeCells:indexPath];
+        [tableView deleteRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationTop];
+    }
+    else
+    {
+         NSArray* arr = [dataModel insertCells:indexPath];
+        [tableView insertRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationBottom];
+    }
+    /*
+    NSArray* arr = [dataModel didObjectAtIndexPath:indexPath];
+    BOOL isExpand = YES;
+    if(isExpand)
+    {
+        [tableView insertRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationLeft];
+    }
+    else
+    {
+        [tableView deleteRowsAtIndexPaths:arr withRowAnimation:UITableViewRowAnimationRight];
+    }
+     */
+    
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //here cannot call cellForRowAtIndexPath will cause recure
+    //UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+     if([dataModel levelAtIndexPath:indexPath])
+     {
+         return  50;
+     }
+     else{
+         return 70;
+     }
 }
 
 @end

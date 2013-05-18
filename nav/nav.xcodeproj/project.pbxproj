@@ -16,6 +16,7 @@
 		6567F46F174497EE009062B0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6567F46E174497EE009062B0 /* Default.png */; };
 		6567F471174497EE009062B0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6567F470174497EE009062B0 /* Default@2x.png */; };
 		6567F473174497EE009062B0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6567F472174497EE009062B0 /* Default-568h@2x.png */; };
+		6567F47B1744984B009062B0 /* tomRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6567F47A1744984B009062B0 /* tomRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		6567F46E174497EE009062B0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		6567F470174497EE009062B0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6567F472174497EE009062B0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6567F4791744984B009062B0 /* tomRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tomRootViewController.h; path = ../tomRootViewController.h; sourceTree = "<group>"; };
+		6567F47A1744984B009062B0 /* tomRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tomRootViewController.m; path = ../tomRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 		6567F462174497EE009062B0 /* nav */ = {
 			isa = PBXGroup;
 			children = (
+				6567F4791744984B009062B0 /* tomRootViewController.h */,
+				6567F47A1744984B009062B0 /* tomRootViewController.m */,
 				6567F46B174497EE009062B0 /* tomAppDelegate.h */,
 				6567F46C174497EE009062B0 /* tomAppDelegate.m */,
 				6567F463174497EE009062B0 /* Supporting Files */,
@@ -167,6 +172,7 @@
 			files = (
 				6567F469174497EE009062B0 /* main.m in Sources */,
 				6567F46D174497EE009062B0 /* tomAppDelegate.m in Sources */,
+				6567F47B1744984B009062B0 /* tomRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface tomxxxTableViewController : UITableViewController
-
+{
+    NSMutableArray* data;
+}
 @end

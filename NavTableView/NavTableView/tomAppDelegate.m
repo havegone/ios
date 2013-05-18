@@ -7,8 +7,14 @@
 //
 
 #import "tomAppDelegate.h"
+#import "tomNavViewController.h"
+#import "tomMainViewController.h"
+
+
 
 @implementation tomAppDelegate
+
+
 
 - (void)dealloc
 {
@@ -21,6 +27,23 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    tomMainViewController * mainViewController = [[tomMainViewController alloc] initWithNibName:@"tomMainViewController" bundle:nil];
+    
+    
+    //self.navController = [[tomNavViewController alloc] initWithNibName:@"NavViewController" bundle:nil];
+    self.navController = [[tomNavViewController alloc] initWithRootViewController:mainViewController];
+
+    
+    //self.window.rootViewController = self.navController;
+    
+    
+    
+  
+    self.window.rootViewController = self.navController; //[[UINavigationController alloc] initWithRootViewController:mainViewController];
+    
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

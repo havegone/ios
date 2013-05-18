@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _label.text = @"dddd";
     // Do any additional setup after loading the view from its nib.
 }
 

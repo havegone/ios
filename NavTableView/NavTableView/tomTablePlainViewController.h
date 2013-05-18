@@ -10,4 +10,8 @@
 
 @interface tomTablePlainViewController : UITableViewController
 
+- (void)popToRootVC;
+- (void)popItemVC;
+- (void)initNavBar;
+- (void)initNavToolBar;
 @end

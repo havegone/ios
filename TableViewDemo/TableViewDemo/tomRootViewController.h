@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface tomRootViewController : UIViewController
+@property (retain, nonatomic) IBOutlet UILabel *label;
+
+- (IBAction)onPress:(UIButton *)sender;
+- (IBAction)onPressDown:(UIButton *)sender;
+
 
 @end

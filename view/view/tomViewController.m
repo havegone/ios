@@ -14,6 +14,8 @@
 
 @implementation tomViewController
 
+@synthesize lable;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

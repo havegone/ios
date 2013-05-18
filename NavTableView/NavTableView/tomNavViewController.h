@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@class tomTablePlainViewController;
+@class tomTableGroupViewController;
+
 @interface tomNavViewController : UINavigationController
+
+
+
+
 
 @end

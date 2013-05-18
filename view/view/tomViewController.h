@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface tomViewController : UIViewController
+{
+    UILabel * lable;
+}
+
+@property (nonatomic,retain) IBOutlet UILabel* lable;
 
 @end
