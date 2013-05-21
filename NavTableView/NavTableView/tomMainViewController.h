@@ -11,6 +11,7 @@
 @interface tomMainViewController : UIViewController
 - (IBAction)showPlainTable:(id)sender;
 - (IBAction)showGroupTable:(id)sender;
+- (IBAction)showCustomTable:(id)sender;
 //@property(retain,nonatomic)tomTablePlainViewController * tablePlainViewController;
 //@property(retain,nonatomic)tomTableGroupViewController * tableGroupViewController;
 

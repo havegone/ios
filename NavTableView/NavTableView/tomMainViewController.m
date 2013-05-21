@@ -9,6 +9,8 @@
 #import "tomMainViewController.h"
 #import "tomTablePlainViewController.h"
 #import "tomTableGroupViewController.h"
+#import "tomCustomTableViewController.h"
+#import "tomWuliuViewController.h"
 
 @interface tomMainViewController ()
 
@@ -55,6 +57,28 @@
     [tableGroupViewController initWithStyle:UITableViewStyleGrouped];
     
     [self.navigationController pushViewController:tableGroupViewController animated:YES];
+    
+}
+
+- (IBAction)showCustomTable:(id)sender
+{
+    
+    /*
+    tomCustomTableViewController * tableGroupViewController = [[tomCustomTableViewController alloc] initWithNibName:nil bundle:nil];
+    
+    [tableGroupViewController initWithStyle:UITableViewStylePlain];
+    
+    //[tableGroupViewController
+    //[tableGroupViewController ]
+    //[tableGroupViewController tableView:[tableGroupViewController.view] viewForHeaderInSection:0];
+    
+    [self.navigationController pushViewController:tableGroupViewController animated:YES];
+     */
+    
+    
+    tomWuliuViewController * customView = [[tomWuliuViewController alloc] initWithNibName:@"tomWuliuViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:customView animated:YES];
     
 }
 @end

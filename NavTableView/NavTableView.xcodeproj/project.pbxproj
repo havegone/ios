@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6531D484174A065700540148 /* LogisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D482174A065700540148 /* LogisticsViewController.m */; };
+		6531D485174A065700540148 /* LogisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6531D483174A065700540148 /* LogisticsViewController.xib */; };
+		6531D487174A0A8000540148 /* 2013.png in Resources */ = {isa = PBXBuildFile; fileRef = 6531D486174A0A8000540148 /* 2013.png */; };
+		6531D48D174A18AF00540148 /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6531D488174A18AF00540148 /* backbutton@2x.png */; };
+		6531D48E174A18AF00540148 /* indexbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6531D489174A18AF00540148 /* indexbutton@2x.png */; };
+		6531D48F174A18AF00540148 /* nav@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6531D48A174A18AF00540148 /* nav@2x.png */; };
+		6531D490174A18AF00540148 /* right_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6531D48B174A18AF00540148 /* right_off@2x.png */; };
+		6531D491174A18AF00540148 /* right_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6531D48C174A18AF00540148 /* right_on@2x.png */; };
+		6531D494174A1F3300540148 /* tomCustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D493174A1F3300540148 /* tomCustomTableView.m */; };
+		6531D497174A227200540148 /* tomCustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D496174A227200540148 /* tomCustomTableViewController.m */; };
+		6531D49A174A36CD00540148 /* tomCustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D499174A36CD00540148 /* tomCustomTableCell.m */; };
+		6531D4A3174A3D5800540148 /* tomWuliuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D4A1174A3D5700540148 /* tomWuliuViewController.m */; };
+		6531D4A4174A3D5800540148 /* tomWuliuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6531D4A2174A3D5700540148 /* tomWuliuViewController.xib */; };
 		656E728A1745CD07001DCA0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E72891745CD07001DCA0C /* UIKit.framework */; };
 		656E728C1745CD07001DCA0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E728B1745CD07001DCA0C /* Foundation.framework */; };
 		656E728E1745CD07001DCA0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E728D1745CD07001DCA0C /* CoreGraphics.framework */; };
@@ -29,6 +42,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6531D481174A065700540148 /* LogisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogisticsViewController.h; sourceTree = "<group>"; };
+		6531D482174A065700540148 /* LogisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogisticsViewController.m; sourceTree = "<group>"; };
+		6531D483174A065700540148 /* LogisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogisticsViewController.xib; sourceTree = "<group>"; };
+		6531D486174A0A8000540148 /* 2013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2013.png; sourceTree = "<group>"; };
+		6531D488174A18AF00540148 /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@2x.png"; sourceTree = "<group>"; };
+		6531D489174A18AF00540148 /* indexbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "indexbutton@2x.png"; sourceTree = "<group>"; };
+		6531D48A174A18AF00540148 /* nav@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav@2x.png"; sourceTree = "<group>"; };
+		6531D48B174A18AF00540148 /* right_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_off@2x.png"; sourceTree = "<group>"; };
+		6531D48C174A18AF00540148 /* right_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_on@2x.png"; sourceTree = "<group>"; };
+		6531D492174A1F3300540148 /* tomCustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomCustomTableView.h; sourceTree = "<group>"; };
+		6531D493174A1F3300540148 /* tomCustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomCustomTableView.m; sourceTree = "<group>"; };
+		6531D495174A227100540148 /* tomCustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomCustomTableViewController.h; sourceTree = "<group>"; };
+		6531D496174A227200540148 /* tomCustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomCustomTableViewController.m; sourceTree = "<group>"; };
+		6531D498174A36CD00540148 /* tomCustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomCustomTableCell.h; sourceTree = "<group>"; };
+		6531D499174A36CD00540148 /* tomCustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomCustomTableCell.m; sourceTree = "<group>"; };
+		6531D4A0174A3D5700540148 /* tomWuliuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomWuliuViewController.h; sourceTree = "<group>"; };
+		6531D4A1174A3D5700540148 /* tomWuliuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomWuliuViewController.m; sourceTree = "<group>"; };
+		6531D4A2174A3D5700540148 /* tomWuliuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tomWuliuViewController.xib; sourceTree = "<group>"; };
 		656E72861745CD07001DCA0C /* NavTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656E72891745CD07001DCA0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		656E728B1745CD07001DCA0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +134,13 @@
 		656E728F1745CD07001DCA0C /* NavTableView */ = {
 			isa = PBXGroup;
 			children = (
+				6531D495174A227100540148 /* tomCustomTableViewController.h */,
+				6531D496174A227200540148 /* tomCustomTableViewController.m */,
+				6531D492174A1F3300540148 /* tomCustomTableView.h */,
+				6531D493174A1F3300540148 /* tomCustomTableView.m */,
+				6531D481174A065700540148 /* LogisticsViewController.h */,
+				6531D482174A065700540148 /* LogisticsViewController.m */,
+				6531D483174A065700540148 /* LogisticsViewController.xib */,
 				656E72C517462967001DCA0C /* tomTableDataModel.h */,
 				656E72C617462967001DCA0C /* tomTableDataModel.m */,
 				656E72C01745DF6E001DCA0C /* tomMainViewController.h */,
@@ -121,6 +159,11 @@
 				656E72BD1745DD2C001DCA0C /* tomTableGroupViewController.xib */,
 				656E72C21745DF6E001DCA0C /* tomMainViewController.xib */,
 				656E72C817462F4E001DCA0C /* data.plist */,
+				6531D498174A36CD00540148 /* tomCustomTableCell.h */,
+				6531D499174A36CD00540148 /* tomCustomTableCell.m */,
+				6531D4A0174A3D5700540148 /* tomWuliuViewController.h */,
+				6531D4A1174A3D5700540148 /* tomWuliuViewController.m */,
+				6531D4A2174A3D5700540148 /* tomWuliuViewController.xib */,
 			);
 			path = NavTableView;
 			sourceTree = "<group>";
@@ -128,6 +171,12 @@
 		656E72901745CD07001DCA0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6531D488174A18AF00540148 /* backbutton@2x.png */,
+				6531D489174A18AF00540148 /* indexbutton@2x.png */,
+				6531D48A174A18AF00540148 /* nav@2x.png */,
+				6531D48B174A18AF00540148 /* right_off@2x.png */,
+				6531D48C174A18AF00540148 /* right_on@2x.png */,
+				6531D486174A0A8000540148 /* 2013.png */,
 				656E72911745CD07001DCA0C /* NavTableView-Info.plist */,
 				656E72921745CD07001DCA0C /* InfoPlist.strings */,
 				656E72951745CD07001DCA0C /* main.m */,
@@ -200,6 +249,14 @@
 				656E72BF1745DD2C001DCA0C /* tomTableGroupViewController.xib in Resources */,
 				656E72C41745DF6E001DCA0C /* tomMainViewController.xib in Resources */,
 				656E72C917462F4E001DCA0C /* data.plist in Resources */,
+				6531D485174A065700540148 /* LogisticsViewController.xib in Resources */,
+				6531D487174A0A8000540148 /* 2013.png in Resources */,
+				6531D48D174A18AF00540148 /* backbutton@2x.png in Resources */,
+				6531D48E174A18AF00540148 /* indexbutton@2x.png in Resources */,
+				6531D48F174A18AF00540148 /* nav@2x.png in Resources */,
+				6531D490174A18AF00540148 /* right_off@2x.png in Resources */,
+				6531D491174A18AF00540148 /* right_on@2x.png in Resources */,
+				6531D4A4174A3D5800540148 /* tomWuliuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +274,11 @@
 				656E72BE1745DD2C001DCA0C /* tomTableGroupViewController.m in Sources */,
 				656E72C31745DF6E001DCA0C /* tomMainViewController.m in Sources */,
 				656E72C717462967001DCA0C /* tomTableDataModel.m in Sources */,
+				6531D484174A065700540148 /* LogisticsViewController.m in Sources */,
+				6531D494174A1F3300540148 /* tomCustomTableView.m in Sources */,
+				6531D497174A227200540148 /* tomCustomTableViewController.m in Sources */,
+				6531D49A174A36CD00540148 /* tomCustomTableCell.m in Sources */,
+				6531D4A3174A3D5800540148 /* tomWuliuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +391,7 @@
 				656E72A51745CD07001DCA0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

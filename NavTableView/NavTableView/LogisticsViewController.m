@@ -1,18 +1,30 @@
 //
-//  tomCustomTableViewController.m
-//  NavTableView
+//  LogisticsViewController.m
+//  snstaoban
 //
 //  Created by Tommy on 13-5-20.
-//  Copyright (c) 2013年 Tommy. All rights reserved.
+//  Copyright (c) 2013年 Bo Xiu. All rights reserved.
 //
 
-#import "tomCustomTableViewController.h"
+#import "LogisticsViewController.h"
 
-@interface tomCustomTableViewController ()
+@interface LogisticsViewController ()
+
+
+
+
+
+
+
+
+
 
 @end
 
-@implementation tomCustomTableViewController
+@implementation LogisticsViewController
+
+
+@synthesize cellArray;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -21,18 +33,6 @@
         // Custom initialization
     }
     return self;
-}
-
-- (void) loadView
-{
-    [super loadView];
-    
-    
-    UITableView * view = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds] style: UITableViewStylePlain];
-    
-    //self.view=view;
-    
-    //[self]
 }
 
 - (void)viewDidLoad
@@ -44,15 +44,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    
-    
-    //UIView* view = [[UIView alloc] initWithFrame:[UIScreen mainScreen] bound];
-    
-    UITableView * view = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds] style: UITableViewStylePlain];
-    //[self.view = view];
-    
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,54 +52,95 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    
-	// create the parent view
-	UIView * customSectionView = [[UIView alloc] initWithFrame:CGRectMake(0.0, -5, self.tableView.frame.size.width, [self tableView:tableView heightForHeaderInSection:section])];
-	customSectionView.backgroundColor = [[UIColor colorWithRed:0.306 green:0.161 blue:0.047 alpha:1.000] colorWithAlphaComponent:0.9];
-	
-	// create the label
-	UILabel * headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 300, customSectionView.frame.size.height)];
-	headerLabel.backgroundColor = [UIColor clearColor];
-	headerLabel.opaque = NO;
-	headerLabel.textColor = [UIColor whiteColor];
-	headerLabel.highlightedTextColor = [UIColor whiteColor];
-	headerLabel.font = [UIFont fontWithName:@"Georgia" size:14];
-    headerLabel.text = @"Foo";
-                        
-                        // package and return
-    [customSectionView addSubview:headerLabel];
-    [headerLabel release];
-    return [customSectionView autorelease];
+- (NSUInteger) levelAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 0;
 }
-                        
-- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 30.0;
- }
+
+- (LogisticState) logisticStateAtIndexPath:(NSIndexPath *)indexPath;
+{
+    return LogisticStateRecipted;
+}
+
+
+
+- (UITableViewCell *) cellForTable:(UITableView*) tableView AtIndexPath:(NSIndexPath *)indexPath
+{
+    /*
+    
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    NSUInteger level = [self levelAtIndexPath:indexPath];
+    
+    //UITableViewCellStyle style = level == 0 ? UITableViewCellStyleDefault:uitableviewcellsty
+    if (cell == nil) {
+        
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    
+    
+    */
+    
+    return nil;
+    
+}
+
+- (void) configForCell:(UITableViewCell *)cell AtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.indentationLevel = [self levelAtIndexPath:indexPath];
+    
+    //show state image
+    if( 0 == cell.indentationLevel) {
+        switch ([self logisticStateAtIndexPath:indexPath]) {
+            case LogisticStatePayed:
+                break;
+            case LogisticStatePackaged:
+                break;
+            case LogisticStateShipping:
+                break;
+            case LogisticStateDeliving:
+                break;
+            case LogisticStateRecipted:
+                break;
+            default:
+                break;
+        }
+        
+        
+    } else {
+        cell.textLabel.text = @"";
+    }
+    
+}
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.cellArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    }
     
     // Configure the cell...
+    [self configForCell:cell AtIndexPath:indexPath];
     
     return cell;
 }
@@ -164,6 +196,21 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    
+    //[tableView ]
 }
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    const int defaultCellHeight = 40;
+    NSUInteger level = [self levelAtIndexPath:indexPath];
+    return (defaultCellHeight - level * 5);
+}
+
+
+
+
+
 
 @end

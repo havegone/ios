@@ -122,13 +122,28 @@
 {
     // test ToolBar
     
-    UIBarButtonItem *one = [[UIBarButtonItem alloc] initWithTitle:@"r2" style:UIBarButtonItemStyleBordered target:self action:@selector(popItemVC)];
+    UIBarButtonItem *one = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleBordered target:self action:@selector(popItemVC)];
+    
+    UIImage* backImg = [UIImage imageNamed:@"backbutton@2x"];
+    [one setBackgroundImage:backImg forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
    // UIBarButtonItem *one = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:nil action:nil];
     UIBarButtonItem *two = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:nil action:nil];
     UIBarButtonItem *three = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:nil action:nil];
     UIBarButtonItem *four = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:nil action:nil];
     UIBarButtonItem *flexItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     [self setToolbarItems:[NSArray arrayWithObjects:flexItem, one, flexItem, two, flexItem, three, flexItem, four, flexItem, nil]];
+    
+    
+    
+    
+    UIImage * toolbarImg = [UIImage imageNamed:@"nav@2x"];
+    //[self.navigationController.toolbar ]
+    [self.navigationController.toolbar setBackgroundImage:toolbarImg forToolbarPosition:UIToolbarPositionBottom barMetrics:UIBarMetricsDefault];
+    
+    CGRect rect;
+    
+    
+    rect = [self.navigationController.toolbar frame];
     [one release];
     [two release];
     [three release];

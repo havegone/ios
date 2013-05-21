@@ -8,6 +8,30 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+@interface WuliuHeaderView:UIView
+{
+    NSString * imageName;
+    NSString * text;
+    NSString * detaiText;
+}
+
+
+@property (nonatomic,retain) NSString * imageName;
+@property (nonatomic,retain) NSString * text;
+@property (nonatomic,retain) NSString * detailText;
+
+
+
+@end
+
 @interface tomWuliuViewController : UIViewController
+
+
+
+
+- (void) initHeaderView;
+
 
 @end
