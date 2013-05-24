@@ -16,10 +16,34 @@
 		6531D490174A18AF00540148 /* right_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6531D48B174A18AF00540148 /* right_off@2x.png */; };
 		6531D491174A18AF00540148 /* right_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6531D48C174A18AF00540148 /* right_on@2x.png */; };
 		6531D494174A1F3300540148 /* tomCustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D493174A1F3300540148 /* tomCustomTableView.m */; };
-		6531D497174A227200540148 /* tomCustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D496174A227200540148 /* tomCustomTableViewController.m */; };
 		6531D49A174A36CD00540148 /* tomCustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D499174A36CD00540148 /* tomCustomTableCell.m */; };
-		6531D4A3174A3D5800540148 /* tomWuliuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D4A1174A3D5700540148 /* tomWuliuViewController.m */; };
-		6531D4A4174A3D5800540148 /* tomWuliuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6531D4A2174A3D5700540148 /* tomWuliuViewController.xib */; };
+		6531D4AA174B08FE00540148 /* tomWuliuCustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D4A9174B08FE00540148 /* tomWuliuCustomTableViewController.m */; };
+		6531D4C0174B107C00540148 /* tomDetailLogisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D4BE174B107C00540148 /* tomDetailLogisticsViewController.m */; };
+		6531D4C1174B107C00540148 /* tomDetailLogisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6531D4BF174B107C00540148 /* tomDetailLogisticsViewController.xib */; };
+		6531D4C4174B10D100540148 /* tomCustomDetailHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D4C3174B10D100540148 /* tomCustomDetailHeaderView.m */; };
+		6531D4C7174B18F100540148 /* tomLogisticsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D4C6174B18F100540148 /* tomLogisticsTableCell.m */; };
+		6531D4CA174B192400540148 /* tomDetailLogisticsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6531D4C9174B192400540148 /* tomDetailLogisticsTableViewController.m */; };
+		6531D4CC174B7CA400540148 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 6531D4CB174B7CA400540148 /* 11.png */; };
+		6531D4CE174B866800540148 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6531D4CD174B866800540148 /* bg.png */; };
+		65673651174DE0520053EF9E /* allow2icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65673650174DE0520053EF9E /* allow2icon@2x.png */; };
+		656A1074174CA9B800E18329 /* icon1_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A106C174CA9B800E18329 /* icon1_off@2x.png */; };
+		656A1075174CA9B800E18329 /* icon1_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A106D174CA9B800E18329 /* icon1_on@2x.png */; };
+		656A1076174CA9B800E18329 /* icon2_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A106E174CA9B800E18329 /* icon2_off@2x.png */; };
+		656A1077174CA9B800E18329 /* icon2_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A106F174CA9B800E18329 /* icon2_on@2x.png */; };
+		656A1078174CA9B800E18329 /* icon3_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A1070174CA9B800E18329 /* icon3_off@2x.png */; };
+		656A1079174CA9B800E18329 /* icon3_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A1071174CA9B800E18329 /* icon3_on@2x.png */; };
+		656A107A174CA9B800E18329 /* icon4_off@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A1072174CA9B800E18329 /* icon4_off@2x.png */; };
+		656A107B174CA9B800E18329 /* icon4_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A1073174CA9B800E18329 /* icon4_on@2x.png */; };
+		656A107E174CA9C700E18329 /* top_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A107C174CA9C700E18329 /* top_bg@2x.png */; };
+		656A107F174CA9C700E18329 /* transportationicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A107D174CA9C700E18329 /* transportationicon@2x.png */; };
+		656A1086174CAA0100E18329 /* content_bg2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A1080174CAA0100E18329 /* content_bg2@2x.png */; };
+		656A1087174CAA0100E18329 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 656A1082174CAA0100E18329 /* InfoPlist.strings */; };
+		656A1088174CAA0100E18329 /* line@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A1084174CAA0100E18329 /* line@2x.png */; };
+		656A1089174CAA0100E18329 /* sgin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 656A1085174CAA0100E18329 /* sgin@2x.png */; };
+		656A108D174CAAA600E18329 /* tomLogisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656A108B174CAAA600E18329 /* tomLogisticsViewController.m */; };
+		656A108E174CAAA600E18329 /* tomLogisticsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 656A108C174CAAA600E18329 /* tomLogisticsViewController.xib */; };
+		656A1091174CBFC400E18329 /* LogisticsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 656A1090174CBFC400E18329 /* LogisticsTableViewController.m */; };
+		656A1094174CC40300E18329 /* LogisticsOrderTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 656A1093174CC40300E18329 /* LogisticsOrderTableCell.m */; };
 		656E728A1745CD07001DCA0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E72891745CD07001DCA0C /* UIKit.framework */; };
 		656E728C1745CD07001DCA0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E728B1745CD07001DCA0C /* Foundation.framework */; };
 		656E728E1745CD07001DCA0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 656E728D1745CD07001DCA0C /* CoreGraphics.framework */; };
@@ -53,13 +77,43 @@
 		6531D48C174A18AF00540148 /* right_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right_on@2x.png"; sourceTree = "<group>"; };
 		6531D492174A1F3300540148 /* tomCustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomCustomTableView.h; sourceTree = "<group>"; };
 		6531D493174A1F3300540148 /* tomCustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomCustomTableView.m; sourceTree = "<group>"; };
-		6531D495174A227100540148 /* tomCustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomCustomTableViewController.h; sourceTree = "<group>"; };
-		6531D496174A227200540148 /* tomCustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomCustomTableViewController.m; sourceTree = "<group>"; };
 		6531D498174A36CD00540148 /* tomCustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomCustomTableCell.h; sourceTree = "<group>"; };
 		6531D499174A36CD00540148 /* tomCustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomCustomTableCell.m; sourceTree = "<group>"; };
-		6531D4A0174A3D5700540148 /* tomWuliuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomWuliuViewController.h; sourceTree = "<group>"; };
-		6531D4A1174A3D5700540148 /* tomWuliuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomWuliuViewController.m; sourceTree = "<group>"; };
-		6531D4A2174A3D5700540148 /* tomWuliuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tomWuliuViewController.xib; sourceTree = "<group>"; };
+		6531D4A8174B08FE00540148 /* tomWuliuCustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomWuliuCustomTableViewController.h; sourceTree = "<group>"; };
+		6531D4A9174B08FE00540148 /* tomWuliuCustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomWuliuCustomTableViewController.m; sourceTree = "<group>"; };
+		6531D4BD174B107C00540148 /* tomDetailLogisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomDetailLogisticsViewController.h; sourceTree = "<group>"; };
+		6531D4BE174B107C00540148 /* tomDetailLogisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomDetailLogisticsViewController.m; sourceTree = "<group>"; };
+		6531D4BF174B107C00540148 /* tomDetailLogisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tomDetailLogisticsViewController.xib; sourceTree = "<group>"; };
+		6531D4C2174B10D100540148 /* tomCustomDetailHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomCustomDetailHeaderView.h; sourceTree = "<group>"; };
+		6531D4C3174B10D100540148 /* tomCustomDetailHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomCustomDetailHeaderView.m; sourceTree = "<group>"; };
+		6531D4C5174B18F100540148 /* tomLogisticsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomLogisticsTableCell.h; sourceTree = "<group>"; };
+		6531D4C6174B18F100540148 /* tomLogisticsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomLogisticsTableCell.m; sourceTree = "<group>"; };
+		6531D4C8174B192400540148 /* tomDetailLogisticsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomDetailLogisticsTableViewController.h; sourceTree = "<group>"; };
+		6531D4C9174B192400540148 /* tomDetailLogisticsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomDetailLogisticsTableViewController.m; sourceTree = "<group>"; };
+		6531D4CB174B7CA400540148 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		6531D4CD174B866800540148 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		65673650174DE0520053EF9E /* allow2icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "allow2icon@2x.png"; sourceTree = "<group>"; };
+		656A106C174CA9B800E18329 /* icon1_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1_off@2x.png"; sourceTree = "<group>"; };
+		656A106D174CA9B800E18329 /* icon1_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon1_on@2x.png"; sourceTree = "<group>"; };
+		656A106E174CA9B800E18329 /* icon2_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon2_off@2x.png"; sourceTree = "<group>"; };
+		656A106F174CA9B800E18329 /* icon2_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon2_on@2x.png"; sourceTree = "<group>"; };
+		656A1070174CA9B800E18329 /* icon3_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon3_off@2x.png"; sourceTree = "<group>"; };
+		656A1071174CA9B800E18329 /* icon3_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon3_on@2x.png"; sourceTree = "<group>"; };
+		656A1072174CA9B800E18329 /* icon4_off@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon4_off@2x.png"; sourceTree = "<group>"; };
+		656A1073174CA9B800E18329 /* icon4_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon4_on@2x.png"; sourceTree = "<group>"; };
+		656A107C174CA9C700E18329 /* top_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_bg@2x.png"; sourceTree = "<group>"; };
+		656A107D174CA9C700E18329 /* transportationicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "transportationicon@2x.png"; sourceTree = "<group>"; };
+		656A1080174CAA0100E18329 /* content_bg2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "content_bg2@2x.png"; path = "NavTableView/content_bg2@2x.png"; sourceTree = "<group>"; };
+		656A1083174CAA0100E18329 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		656A1084174CAA0100E18329 /* line@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "line@2x.png"; sourceTree = "<group>"; };
+		656A1085174CAA0100E18329 /* sgin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sgin@2x.png"; sourceTree = "<group>"; };
+		656A108A174CAAA600E18329 /* tomLogisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tomLogisticsViewController.h; sourceTree = "<group>"; };
+		656A108B174CAAA600E18329 /* tomLogisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tomLogisticsViewController.m; sourceTree = "<group>"; };
+		656A108C174CAAA600E18329 /* tomLogisticsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = tomLogisticsViewController.xib; sourceTree = "<group>"; };
+		656A108F174CBFC400E18329 /* LogisticsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogisticsTableViewController.h; sourceTree = "<group>"; };
+		656A1090174CBFC400E18329 /* LogisticsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogisticsTableViewController.m; sourceTree = "<group>"; };
+		656A1092174CC40300E18329 /* LogisticsOrderTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogisticsOrderTableCell.h; sourceTree = "<group>"; };
+		656A1093174CC40300E18329 /* LogisticsOrderTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogisticsOrderTableCell.m; sourceTree = "<group>"; };
 		656E72861745CD07001DCA0C /* NavTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656E72891745CD07001DCA0C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		656E728B1745CD07001DCA0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,9 +158,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6531D4AB174B098400540148 /* wuliu */ = {
+			isa = PBXGroup;
+			children = (
+				656A106B174CA8D500E18329 /* detail */,
+				656A108A174CAAA600E18329 /* tomLogisticsViewController.h */,
+				656A108B174CAAA600E18329 /* tomLogisticsViewController.m */,
+				656A108C174CAAA600E18329 /* tomLogisticsViewController.xib */,
+				656A108F174CBFC400E18329 /* LogisticsTableViewController.h */,
+				656A1090174CBFC400E18329 /* LogisticsTableViewController.m */,
+				656A1092174CC40300E18329 /* LogisticsOrderTableCell.h */,
+				656A1093174CC40300E18329 /* LogisticsOrderTableCell.m */,
+			);
+			name = wuliu;
+			sourceTree = "<group>";
+		};
+		656A106B174CA8D500E18329 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				6531D4BD174B107C00540148 /* tomDetailLogisticsViewController.h */,
+				6531D4BE174B107C00540148 /* tomDetailLogisticsViewController.m */,
+				6531D4BF174B107C00540148 /* tomDetailLogisticsViewController.xib */,
+				6531D4C2174B10D100540148 /* tomCustomDetailHeaderView.h */,
+				6531D4C3174B10D100540148 /* tomCustomDetailHeaderView.m */,
+				6531D4C5174B18F100540148 /* tomLogisticsTableCell.h */,
+				6531D4C6174B18F100540148 /* tomLogisticsTableCell.m */,
+				6531D4C8174B192400540148 /* tomDetailLogisticsTableViewController.h */,
+				6531D4C9174B192400540148 /* tomDetailLogisticsTableViewController.m */,
+			);
+			name = detail;
+			sourceTree = "<group>";
+		};
+		656A1081174CAA0100E18329 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				656A1082174CAA0100E18329 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = NavTableView/en.lproj;
+			sourceTree = "<group>";
+		};
 		656E727D1745CD07001DCA0C = {
 			isa = PBXGroup;
 			children = (
+				656A1080174CAA0100E18329 /* content_bg2@2x.png */,
+				656A1081174CAA0100E18329 /* en.lproj */,
 				656E728F1745CD07001DCA0C /* NavTableView */,
 				656E72881745CD07001DCA0C /* Frameworks */,
 				656E72871745CD07001DCA0C /* Products */,
@@ -134,8 +230,7 @@
 		656E728F1745CD07001DCA0C /* NavTableView */ = {
 			isa = PBXGroup;
 			children = (
-				6531D495174A227100540148 /* tomCustomTableViewController.h */,
-				6531D496174A227200540148 /* tomCustomTableViewController.m */,
+				6531D4AB174B098400540148 /* wuliu */,
 				6531D492174A1F3300540148 /* tomCustomTableView.h */,
 				6531D493174A1F3300540148 /* tomCustomTableView.m */,
 				6531D481174A065700540148 /* LogisticsViewController.h */,
@@ -161,9 +256,8 @@
 				656E72C817462F4E001DCA0C /* data.plist */,
 				6531D498174A36CD00540148 /* tomCustomTableCell.h */,
 				6531D499174A36CD00540148 /* tomCustomTableCell.m */,
-				6531D4A0174A3D5700540148 /* tomWuliuViewController.h */,
-				6531D4A1174A3D5700540148 /* tomWuliuViewController.m */,
-				6531D4A2174A3D5700540148 /* tomWuliuViewController.xib */,
+				6531D4A8174B08FE00540148 /* tomWuliuCustomTableViewController.h */,
+				6531D4A9174B08FE00540148 /* tomWuliuCustomTableViewController.m */,
 			);
 			path = NavTableView;
 			sourceTree = "<group>";
@@ -171,6 +265,21 @@
 		656E72901745CD07001DCA0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				656A1084174CAA0100E18329 /* line@2x.png */,
+				656A1085174CAA0100E18329 /* sgin@2x.png */,
+				656A107C174CA9C700E18329 /* top_bg@2x.png */,
+				656A107D174CA9C700E18329 /* transportationicon@2x.png */,
+				65673650174DE0520053EF9E /* allow2icon@2x.png */,
+				656A106C174CA9B800E18329 /* icon1_off@2x.png */,
+				656A106D174CA9B800E18329 /* icon1_on@2x.png */,
+				656A106E174CA9B800E18329 /* icon2_off@2x.png */,
+				656A106F174CA9B800E18329 /* icon2_on@2x.png */,
+				656A1070174CA9B800E18329 /* icon3_off@2x.png */,
+				656A1071174CA9B800E18329 /* icon3_on@2x.png */,
+				656A1072174CA9B800E18329 /* icon4_off@2x.png */,
+				656A1073174CA9B800E18329 /* icon4_on@2x.png */,
+				6531D4CD174B866800540148 /* bg.png */,
+				6531D4CB174B7CA400540148 /* 11.png */,
 				6531D488174A18AF00540148 /* backbutton@2x.png */,
 				6531D489174A18AF00540148 /* indexbutton@2x.png */,
 				6531D48A174A18AF00540148 /* nav@2x.png */,
@@ -256,7 +365,25 @@
 				6531D48F174A18AF00540148 /* nav@2x.png in Resources */,
 				6531D490174A18AF00540148 /* right_off@2x.png in Resources */,
 				6531D491174A18AF00540148 /* right_on@2x.png in Resources */,
-				6531D4A4174A3D5800540148 /* tomWuliuViewController.xib in Resources */,
+				6531D4C1174B107C00540148 /* tomDetailLogisticsViewController.xib in Resources */,
+				6531D4CC174B7CA400540148 /* 11.png in Resources */,
+				6531D4CE174B866800540148 /* bg.png in Resources */,
+				656A1074174CA9B800E18329 /* icon1_off@2x.png in Resources */,
+				656A1075174CA9B800E18329 /* icon1_on@2x.png in Resources */,
+				656A1076174CA9B800E18329 /* icon2_off@2x.png in Resources */,
+				656A1077174CA9B800E18329 /* icon2_on@2x.png in Resources */,
+				656A1078174CA9B800E18329 /* icon3_off@2x.png in Resources */,
+				656A1079174CA9B800E18329 /* icon3_on@2x.png in Resources */,
+				656A107A174CA9B800E18329 /* icon4_off@2x.png in Resources */,
+				656A107B174CA9B800E18329 /* icon4_on@2x.png in Resources */,
+				656A107E174CA9C700E18329 /* top_bg@2x.png in Resources */,
+				656A107F174CA9C700E18329 /* transportationicon@2x.png in Resources */,
+				656A1086174CAA0100E18329 /* content_bg2@2x.png in Resources */,
+				656A1087174CAA0100E18329 /* InfoPlist.strings in Resources */,
+				656A1088174CAA0100E18329 /* line@2x.png in Resources */,
+				656A1089174CAA0100E18329 /* sgin@2x.png in Resources */,
+				656A108E174CAAA600E18329 /* tomLogisticsViewController.xib in Resources */,
+				65673651174DE0520053EF9E /* allow2icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,15 +403,29 @@
 				656E72C717462967001DCA0C /* tomTableDataModel.m in Sources */,
 				6531D484174A065700540148 /* LogisticsViewController.m in Sources */,
 				6531D494174A1F3300540148 /* tomCustomTableView.m in Sources */,
-				6531D497174A227200540148 /* tomCustomTableViewController.m in Sources */,
 				6531D49A174A36CD00540148 /* tomCustomTableCell.m in Sources */,
-				6531D4A3174A3D5800540148 /* tomWuliuViewController.m in Sources */,
+				6531D4AA174B08FE00540148 /* tomWuliuCustomTableViewController.m in Sources */,
+				6531D4C0174B107C00540148 /* tomDetailLogisticsViewController.m in Sources */,
+				6531D4C4174B10D100540148 /* tomCustomDetailHeaderView.m in Sources */,
+				6531D4C7174B18F100540148 /* tomLogisticsTableCell.m in Sources */,
+				6531D4CA174B192400540148 /* tomDetailLogisticsTableViewController.m in Sources */,
+				656A108D174CAAA600E18329 /* tomLogisticsViewController.m in Sources */,
+				656A1091174CBFC400E18329 /* LogisticsTableViewController.m in Sources */,
+				656A1094174CC40300E18329 /* LogisticsOrderTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		656A1082174CAA0100E18329 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				656A1083174CAA0100E18329 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		656E72921745CD07001DCA0C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+
+
+@class tomDetailLogisticsTableViewController;
+@class tomCustomDetailHeaderView;
 @interface tomDetailLogisticsViewController : UIViewController
+{
+    tomCustomDetailHeaderView * headerView;
+    tomDetailLogisticsTableViewController * tableViewController;
+    
+}
+
+- (void)popToRootVC;
+- (void)popItemVC;
 
 @end

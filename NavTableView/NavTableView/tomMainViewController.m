@@ -9,8 +9,11 @@
 #import "tomMainViewController.h"
 #import "tomTablePlainViewController.h"
 #import "tomTableGroupViewController.h"
-#import "tomCustomTableViewController.h"
-#import "tomWuliuViewController.h"
+//#import "tomCustomTableViewController.h"
+//#import "tomWuliuViewController.h"
+
+#import "tomDetailLogisticsViewController.h"
+#import "tomLogisticsViewController.h"
 
 @interface tomMainViewController ()
 
@@ -75,10 +78,14 @@
     [self.navigationController pushViewController:tableGroupViewController animated:YES];
      */
     
+   
+    //tomDetailLogisticsViewController * customView = [[tomDetailLogisticsViewController alloc] initWithNibName:nil bundle:nil];
     
-    tomWuliuViewController * customView = [[tomWuliuViewController alloc] initWithNibName:@"tomWuliuViewController" bundle:nil];
+    tomLogisticsViewController * customView = [[tomLogisticsViewController alloc] initWithNibName:nil bundle:nil];
+
     
     [self.navigationController pushViewController:customView animated:YES];
+    
     
 }
 @end

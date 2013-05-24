@@ -28,11 +28,12 @@
 }
 */
 
-
+/*
 - (void) loadView
 {
     [super loadView];
 }
+ */
 
 
 
