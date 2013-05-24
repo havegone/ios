@@ -1,26 +1,18 @@
 //
-//  tomWuliuViewController.m
+//  tomDetailLogisticsViewController.m
 //  NavTableView
 //
-//  Created by Tommy on 13-5-20.
+//  Created by Tommy on 13-5-21.
 //  Copyright (c) 2013年 Tommy. All rights reserved.
 //
 
-#import "tomWuliuViewController.h"
+#import "tomDetailLogisticsViewController.h"
 
-
-@implementation WuliuHeaderView
-
-
-
+@interface tomDetailLogisticsViewController ()
 
 @end
 
-@interface tomWuliuViewController ()
-
-@end
-
-@implementation tomWuliuViewController
+@implementation tomDetailLogisticsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

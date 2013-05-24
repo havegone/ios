@@ -1,18 +1,18 @@
 //
-//  tomCustomTableViewController.m
+//  tomWuliuCustomTableViewController.m
 //  NavTableView
 //
-//  Created by Tommy on 13-5-20.
+//  Created by Tommy on 13-5-21.
 //  Copyright (c) 2013年 Tommy. All rights reserved.
 //
 
-#import "tomCustomTableViewController.h"
+#import "tomWuliuCustomTableViewController.h"
 
-@interface tomCustomTableViewController ()
+@interface tomWuliuCustomTableViewController ()
 
 @end
 
-@implementation tomCustomTableViewController
+@implementation tomWuliuCustomTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -21,18 +21,6 @@
         // Custom initialization
     }
     return self;
-}
-
-- (void) loadView
-{
-    [super loadView];
-    
-    
-    UITableView * view = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds] style: UITableViewStylePlain];
-    
-    //self.view=view;
-    
-    //[self]
 }
 
 - (void)viewDidLoad
@@ -44,15 +32,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    
-    
-    //UIView* view = [[UIView alloc] initWithFrame:[UIScreen mainScreen] bound];
-    
-    UITableView * view = [[UITableView alloc] initWithFrame:[[UIScreen mainScreen] bounds] style: UITableViewStylePlain];
-    //[self.view = view];
-    
-
 }
 
 - (void)didReceiveMemoryWarning
@@ -60,32 +39,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    
-	// create the parent view
-	UIView * customSectionView = [[UIView alloc] initWithFrame:CGRectMake(0.0, -5, self.tableView.frame.size.width, [self tableView:tableView heightForHeaderInSection:section])];
-	customSectionView.backgroundColor = [[UIColor colorWithRed:0.306 green:0.161 blue:0.047 alpha:1.000] colorWithAlphaComponent:0.9];
-	
-	// create the label
-	UILabel * headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, 300, customSectionView.frame.size.height)];
-	headerLabel.backgroundColor = [UIColor clearColor];
-	headerLabel.opaque = NO;
-	headerLabel.textColor = [UIColor whiteColor];
-	headerLabel.highlightedTextColor = [UIColor whiteColor];
-	headerLabel.font = [UIFont fontWithName:@"Georgia" size:14];
-    headerLabel.text = @"Foo";
-                        
-                        // package and return
-    [customSectionView addSubview:headerLabel];
-    [headerLabel release];
-    return [customSectionView autorelease];
-}
-                        
-- (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 30.0;
- }
 
 #pragma mark - Table view data source
 
