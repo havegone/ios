@@ -1,0 +1,98 @@
+{\rtf1\ansi\ansicpg936\cocoartf1138\cocoasubrtf320
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 STHeitiSC-Light;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red100\green56\blue32;\red196\green26\blue22;\red170\green13\blue145;
+\red63\green110\blue116;\red92\green38\blue153;\red46\green13\blue110;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 1.
+\f1 \'bd\'ab
+\f0 WQTableViewController.h
+\f1 \'ba\'cd
+\f0 WQTableViewController.m
+\f1 \'cd\'cf\'c8\'eb\'cf\'ee\'c4\'bf\'d6\'d0
+\f0 \
+2.
+\f1 \'d4\'da\'d7\'d4\'bc\'ba\'b5\'c4
+\f0 viewController
+\f1 \'d6\'d0\'bc\'cc\'b3\'d0
+\f0 WQTableViewController
+\f1 \'b2\'a2\'bc\'d3\'c8\'eb
+\f0 WQTableViewDelegate\
+
+\f1 \'c0\'fd\'c8\'e7\'a3\'ba
+\f0 \
+\pard\tx560\pardeftab560\pardirnatural
+
+\f2\fs22 \cf2 \CocoaLigature0 #import \cf3 "WQTableViewController.h"\cf2 \
+\cf0 \
+\cf4 @interface\cf0  ViewController : \cf5 WQTableViewController\cf0  <\cf5 WQTableViewDelegate\cf0 >\
+3.
+\f1 \'d4\'da\'d7\'d4\'bc\'ba\'b5\'c4
+\f2 viewController.m
+\f1 \'d6\'d0\'b5\'c4
+\f2 - (\cf4 void\cf0 )viewDidLoad
+\f1 \'d6\'d0\'c5\'e4\'d6\'c3\'b2\'ce\'ca\'fd\'c8\'e7\'cf\'c2\'a3\'ba\
+\
+
+\f2 \cf5 wqTable
+\f1 \'a3\'bd
+\f2 mytable ;//
+\f1 \'a3\'a8"mytable \'ce\'aa\'d7\'d4\'bc\'ba\'b5\'c4table")\
+
+\f2 tableDataArray\cf0  = myTableDataArray;//("myTableDataArray"
+\f1 \'ce\'aa\'d7\'d4\'bc\'ba
+\f2 table
+\f1 \'cf\'d4\'ca\'be\'ca\'fd\'be\'dd\'b5\'c4\'ca\'fd\'d7\'e9)\
+
+\f2 \cf5 delegate\cf0 =\cf4 self\cf0 ;\
+\
+4.
+\f1 \'d4\'da\'d7\'d4\'bc\'ba\'b5\'c4viewController.m\'d6\'d0\'bc\'d3\'c8\'ebcode\'a3\'ba\
+
+\f2 -(\cf4 void\cf0 )cellImageDidLoad:(\cf6 NSIndexPath\cf0  *)indexPath image:(\cf6 UIImage\cf0  *)image\
+\{\
+    \cf6 UITableViewCell\cf0  *cell = [\cf5 wqTable\cf0  \cf7 cellForRowAtIndexPath\cf0 :indexPath];\
+    cell.\cf6 imageView\cf0 .\cf6 image\cf0  = image;\
+\}\
+\
+
+\f1 5.\'d7\'ee\'ba\'f3\'d4\'da\
+
+\f2 - (\cf6 UITableViewCell\cf0  *)tableView:(\cf6 UITableView\cf0  *)tableView cellForRowAtIndexPath:(\cf6 NSIndexPath\cf0  *)indexPath
+\f1  \'d6\'d0\'cd\'bc\'c6\'ac\'b5\'c4\'c9\'e8\'d6\'c3\'ce\'aa\
+\
+\
+
+\f2     \cf6 NSString\cf0  *imageName = [[[\cf5 tableDataArray\cf0  \cf7 objectAtIndex\cf0 :indexPath.\cf6 row\cf0 ] \cf7 valueForKey\cf0 :\cf2 KidKey\cf0 ] \cf7 stringByAppendingString\cf0 :\cf3 @".temp"\cf0 ];\
+\
+    \
+    \cf6 NSString\cf0  *imageDataPath = [\cf7 NSHomeDirectory\cf0 () \cf7 stringByAppendingPathComponent\cf0 :[\cf3 @"Library/Caches/"\cf0  \cf7 stringByAppendingString\cf0 :imageName]];\
+    \cf6 UIImage\cf0  *image = [\cf6 UIImage\cf0  \cf7 imageWithData\cf0 :[\cf6 NSData\cf0  \cf7 dataWithContentsOfFile\cf0 :imageDataPath]];\
+    \cf4 if\cf0  (image) \{\
+        cell.\cf6 imageView\cf0 .\cf6 image\cf0  = image;\
+    \}\
+    \cf4 else\cf0  \{\
+        cell.\cf6 imageView\cf0 .\cf6 image\cf0  = [\cf6 UIImage\cf0  \cf7 imageNamed\cf0 :\cf3 @"Placeholder.png"\cf0 ];\
+		//placeholder
+\f1 \'ce\'aa\'d4\'da\'ce\'b4\'bc\'d3\'d4\'d8\'cd\'ea\'b3\'c9\'bc\'d3\'d4\'d8\'cd\'bc\'c6\'ac\'ca\'b1\'cf\'d4\'ca\'be\'b5\'c4\'c4\'ac\'c8\'cf\'cd\'bc\'c6\'ac
+\f2 \
+    \}\
+\
+\
+
+\f1 \'d7\'a2\'d2\'e2\'a3\'ba\'d4\'da
+\f0\fs24 \CocoaLigature1 WQTableViewController.h 
+\f1 \'d3\'d0
+\f0 2
+\f1 \'b8\'f6
+\f0 #define 
+\f1 \'b2\'ce\'ca\'fd
+\f0  
+\f1 \'d0\'e8\'d2\'aa\'b8\'fc\'be\'df\'d7\'d4\'bc\'ba\'b5\'c4\'ca\'b5\'bc\'ca\'c7\'e9\'bf\'f6\'d0\'de\'b8\'c4\
+\
+\'c8\'e7\'d3\'d0\'b8\'fc\'ba\'c3\'b5\'c4\'bd\'a8\'d2\'e9\'bb\'f2\'d5\'df\'ce\'ca\'cc\'e2\'c7\'eb\'b7\'a2\'cb\'cdE-mail\'d6\'c1359794@qq.com\
+\'d7\'aa\'b7\'a2\'c7\'eb\'d7\'a2\'c3\'f7\'b3\'f6\'b4\'a6\'d0\'bb\'d0\'bb\'a3\'a1\'a3\'a1\'a3\'a1
+\f2\fs22 \CocoaLigature0 \
+}
