@@ -1,14 +1,15 @@
 //
 //  CustomHeader.m
-//  FirstAnimation
+//  CoolTable
 //
-//  Created by Tommy on 13-6-4.
-//  Copyright (c) 2013年 Tommy. All rights reserved.
+//  Created by Brian Moakley on 2/19/13.
+//  Copyright (c) 2013 Razeware. All rights reserved.
 //
 
 #import "CustomHeader.h"
+#import "Common.h"
 
-@interface CustomHeader ()
+@interface CustomHeader()
 
 @property (nonatomic, assign) CGRect coloredBoxRect;
 @property (nonatomic, assign) CGRect paperRect;
@@ -39,7 +40,7 @@
 }
 
 -(void) layoutSubviews
-{
+{    
     CGFloat coloredBoxMargin = 6.0;
     CGFloat coloredBoxHeight = 40.0;
     self.coloredBoxRect = CGRectMake(coloredBoxMargin, coloredBoxMargin, self.bounds.size.width-coloredBoxMargin*2, coloredBoxHeight);
@@ -51,23 +52,8 @@
 }
 
 // Replace drawRect with the following
-- (void)drawRect:(CGRect)rect
+-(void) drawRect:(CGRect)rect
 {
-    
-    /*
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    
-    UIColor * redColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:1.0];
-    UIColor * greenColor = [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:1.0];
-    
-    CGContextSetFillColorWithColor(context, redColor.CGColor);
-    CGContextFillRect(context, self.coloredBoxRect);
-    
-    CGContextSetFillColorWithColor(context, greenColor.CGColor);
-    CGContextFillRect(context, self.paperRect);
-    
-    */
-    
     CGContextRef context = UIGraphicsGetCurrentContext();
     
     UIColor * whiteColor = [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0];
@@ -81,49 +67,11 @@
     CGContextSetFillColorWithColor(context, self.lightColor.CGColor);
     CGContextFillRect(context, self.coloredBoxRect);
     CGContextRestoreGState(context);
-    
-/*
     drawGlossAndGradient(context, self.coloredBoxRect, self.lightColor.CGColor, self.darkColor.CGColor);
-        
+    
     CGContextSetStrokeColorWithColor(context, self.darkColor.CGColor);
     CGContextSetLineWidth(context, 1.0);
     CGContextStrokeRect(context, rectFor1PxStroke(self.coloredBoxRect));
-
-*/
 }
-
-/*
-
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
- */
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
-
-
-/*
-
--(void) drawRect:(CGRect)rect
-{
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    UIColor * redColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:1.0];
-    
-    CGContextSetFillColorWithColor(context, redColor.CGColor);
-    CGContextFillRect(context, self.bounds);
-}
- */
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65622986175D8E5C0069B41C /* CustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 65622985175D8E5C0069B41C /* CustomHeader.m */; };
 		6588090E175CA5C300AA0CDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6588090D175CA5C300AA0CDC /* UIKit.framework */; };
 		65880910175CA5C300AA0CDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6588090F175CA5C300AA0CDC /* Foundation.framework */; };
 		65880912175CA5C300AA0CDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65880911175CA5C300AA0CDC /* CoreGraphics.framework */; };
@@ -17,10 +18,14 @@
 		65880922175CA5C300AA0CDC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65880921175CA5C300AA0CDC /* Default@2x.png */; };
 		65880924175CA5C300AA0CDC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65880923175CA5C300AA0CDC /* Default-568h@2x.png */; };
 		65880927175CA5C300AA0CDC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65880925175CA5C300AA0CDC /* MainStoryboard.storyboard */; };
-		6588092A175CA5C300AA0CDC /* tomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65880929175CA5C300AA0CDC /* tomViewController.m */; };
+		65880932175CA63600AA0CDC /* CoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65880931175CA63600AA0CDC /* CoolTableViewController.m */; };
+		65880935175CAA9300AA0CDC /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 65880934175CAA9300AA0CDC /* CustomCellBackground.m */; };
+		65880938175CABF700AA0CDC /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 65880937175CABF700AA0CDC /* Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65622984175D8E5C0069B41C /* CustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHeader.h; sourceTree = "<group>"; };
+		65622985175D8E5C0069B41C /* CustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHeader.m; sourceTree = "<group>"; };
 		6588090A175CA5C300AA0CDC /* FirstAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6588090D175CA5C300AA0CDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6588090F175CA5C300AA0CDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,8 +40,12 @@
 		65880921175CA5C300AA0CDC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		65880923175CA5C300AA0CDC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		65880926175CA5C300AA0CDC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		65880928175CA5C300AA0CDC /* tomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tomViewController.h; sourceTree = "<group>"; };
-		65880929175CA5C300AA0CDC /* tomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tomViewController.m; sourceTree = "<group>"; };
+		65880930175CA63600AA0CDC /* CoolTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoolTableViewController.h; sourceTree = "<group>"; };
+		65880931175CA63600AA0CDC /* CoolTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoolTableViewController.m; sourceTree = "<group>"; };
+		65880933175CAA9300AA0CDC /* CustomCellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackground.h; sourceTree = "<group>"; };
+		65880934175CAA9300AA0CDC /* CustomCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
+		65880936175CABF700AA0CDC /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		65880937175CABF700AA0CDC /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,14 @@
 		65880901175CA5C300AA0CDC = {
 			isa = PBXGroup;
 			children = (
+				65622984175D8E5C0069B41C /* CustomHeader.h */,
+				65622985175D8E5C0069B41C /* CustomHeader.m */,
+				65880936175CABF700AA0CDC /* Common.h */,
+				65880937175CABF700AA0CDC /* Common.m */,
+				65880933175CAA9300AA0CDC /* CustomCellBackground.h */,
+				65880934175CAA9300AA0CDC /* CustomCellBackground.m */,
+				65880930175CA63600AA0CDC /* CoolTableViewController.h */,
+				65880931175CA63600AA0CDC /* CoolTableViewController.m */,
 				65880913175CA5C300AA0CDC /* FirstAnimation */,
 				6588090C175CA5C300AA0CDC /* Frameworks */,
 				6588090B175CA5C300AA0CDC /* Products */,
@@ -86,8 +103,6 @@
 				6588091C175CA5C300AA0CDC /* tomAppDelegate.h */,
 				6588091D175CA5C300AA0CDC /* tomAppDelegate.m */,
 				65880925175CA5C300AA0CDC /* MainStoryboard.storyboard */,
-				65880928175CA5C300AA0CDC /* tomViewController.h */,
-				65880929175CA5C300AA0CDC /* tomViewController.m */,
 				65880914175CA5C300AA0CDC /* Supporting Files */,
 			);
 			path = FirstAnimation;
@@ -176,7 +191,10 @@
 			files = (
 				6588091A175CA5C300AA0CDC /* main.m in Sources */,
 				6588091E175CA5C300AA0CDC /* tomAppDelegate.m in Sources */,
-				6588092A175CA5C300AA0CDC /* tomViewController.m in Sources */,
+				65880932175CA63600AA0CDC /* CoolTableViewController.m in Sources */,
+				65880935175CAA9300AA0CDC /* CustomCellBackground.m in Sources */,
+				65880938175CABF700AA0CDC /* Common.m in Sources */,
+				65622986175D8E5C0069B41C /* CustomHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +317,7 @@
 				6588092F175CA5C300AA0CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

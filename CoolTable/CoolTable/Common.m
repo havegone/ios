@@ -1,14 +1,6 @@
-//
-//  Common.m
-//  FirstAnimation
-//
-//  Created by Tommy on 13-6-3.
-//  Copyright (c) 2013年 Tommy. All rights reserved.
-//
+#import <Foundation/Foundation.h>
 
 #import "Common.h"
-
-
 
 void drawLinearGradient(CGContextRef context, CGRect rect, CGColorRef startColor, CGColorRef endColor)
 {
@@ -18,8 +10,6 @@ void drawLinearGradient(CGContextRef context, CGRect rect, CGColorRef startColor
     NSArray *colors = @[(__bridge id) startColor, (__bridge id) endColor];
     
     CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef) colors, locations);
-    
-    // More coming...
     
     CGPoint startPoint = CGPointMake(CGRectGetMidX(rect), CGRectGetMinY(rect));
     CGPoint endPoint = CGPointMake(CGRectGetMidX(rect), CGRectGetMaxY(rect));
@@ -34,13 +24,9 @@ void drawLinearGradient(CGContextRef context, CGRect rect, CGColorRef startColor
     CGColorSpaceRelease(colorSpace);
 }
 
-CGRect rectFor1PxStroke(CGRect rect)
-{
-    return CGRectMake(rect.origin.x + 0.5, rect.origin.y + 0.5, rect.size.width - 1, rect.size.height - 1);
-}
-
 void draw1PxStroke(CGContextRef context, CGPoint startPoint, CGPoint endPoint, CGColorRef color)
 {
+    
     CGContextSaveGState(context);
     CGContextSetLineCap(context, kCGLineCapSquare);
     CGContextSetStrokeColorWithColor(context, color);
@@ -49,8 +35,13 @@ void draw1PxStroke(CGContextRef context, CGPoint startPoint, CGPoint endPoint, C
     CGContextAddLineToPoint(context, endPoint.x + 0.5, endPoint.y + 0.5);
     CGContextStrokePath(context);
     CGContextRestoreGState(context);
+    
 }
 
+CGRect rectFor1PxStroke(CGRect rect)
+{
+    return CGRectMake(rect.origin.x + 0.5, rect.origin.y + 0.5, rect.size.width - 1, rect.size.height - 1);
+}
 
 void drawGlossAndGradient(CGContextRef context, CGRect rect, CGColorRef startColor, CGColorRef endColor)
 {
@@ -62,4 +53,24 @@ void drawGlossAndGradient(CGContextRef context, CGRect rect, CGColorRef startCol
     CGRect topHalf = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height/2);
     
     drawLinearGradient(context, topHalf, glossColor1.CGColor, glossColor2.CGColor);
+}
+
+CGMutablePathRef createArcPathFromBottomOfRect(CGRect rect, CGFloat arcHeight)
+{
+    CGRect arcRect = CGRectMake(rect.origin.x, rect.origin.y + rect.size.height - arcHeight, rect.size.width, arcHeight);
+    
+    CGFloat arcRadius = (arcRect.size.height/2) + (pow(arcRect.size.width, 2) / (8*arcRect.size.height));
+    CGPoint arcCenter = CGPointMake(arcRect.origin.x + arcRect.size.width/2, arcRect.origin.y + arcRadius);
+    
+    CGFloat angle = acos(arcRect.size.width / (2*arcRadius));
+    CGFloat startAngle = radians(180) + angle;
+    CGFloat endAngle = radians(360) - angle;
+    
+    CGMutablePathRef path = CGPathCreateMutable();
+    CGPathAddArc(path, NULL, arcCenter.x, arcCenter.y, arcRadius, startAngle, endAngle, 0);
+    CGPathAddLineToPoint(path, NULL, CGRectGetMaxX(rect), CGRectGetMinY(rect));
+    CGPathAddLineToPoint(path, NULL, CGRectGetMinX(rect), CGRectGetMinY(rect));
+    CGPathAddLineToPoint(path, NULL, CGRectGetMinX(rect), CGRectGetMaxY(rect));
+    
+    return path;
 }
