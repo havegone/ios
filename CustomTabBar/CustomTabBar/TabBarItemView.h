@@ -8,6 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TabBarItemView : UIView
+@class TomTabBarItem;
+@class TomTabBar;
+@class TabBarItemView;
+
+
+@protocol TabBarItemViewDelegate <NSObject>
+
+- (void) didCreationTabBarItemView:(TabBarItemView *) itemView withTomTabBarItem:(TomTabBarItem *) anItem;
+
+@end
+
+
+@interface TabBarItemView :UIView
+
+@property (nonatomic,retain) UIImageView * imageView;
+@property (nonatomic,retain) UILabel * label;
+@property (nonatomic,assign) TomTabBarItem * item;
+@property (nonatomic,assign) id<TabBarItemViewDelegate>  delegate;
+
+
+
++ (TabBarItemView *) tabBarItemView:(id<TabBarItemViewDelegate>) aDelegate  withFrame:(CGRect) frame withTomTabBarItem:(TomTabBarItem *) anItem;
 
 @end

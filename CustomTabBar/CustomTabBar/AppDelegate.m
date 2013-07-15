@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
+#import "MyTabBarViewController.h"
+
+
 
 @implementation AppDelegate
 
@@ -16,9 +19,39 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    //self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    
+    ViewController* vc = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    vc.text = @"first";
+    
+    ViewController* vc2 = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    vc2.text = @"second";
+    
+    ViewController* vc3 = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
+    vc3.text = @"thrid";
+    
+    
+    UINavigationController * nav = [[UINavigationController alloc] initWithRootViewController:vc3];
+    
+    self.viewController = [[MyTabBarViewController alloc] init];
+    self.viewController.viewControllers = @[vc,vc2,nav];
+    
+    
+    TomTabBarItem * item = [[TomTabBarItem alloc]init];
+    [item initWithTitle:@"first" NormalImage:[UIImage imageNamed:@"basket"] HighlightedImage:[UIImage imageNamed:@"Beer"]];
+    TomTabBarItem * item2 = [[TomTabBarItem alloc]init];
+    [item2 initWithTitle:@"second" Image:[UIImage imageNamed:@"Beer"]];
+    TomTabBarItem * item3 = [[TomTabBarItem alloc]init];
+    [item3 initWithTitle:@"thrid" Image:[UIImage imageNamed:@"Money-Bag"]];
+    //[self.viewController.tabBar setTabBarItems:[NSArray arrayWithObjects:item, nil]];
+    self.viewController.tabBar.tabBarItems = @[item,item2,item3];
+    
     self.window.rootViewController = self.viewController;
+    
     [self.window makeKeyAndVisible];
+    
+    
+    
     return YES;
 }
 

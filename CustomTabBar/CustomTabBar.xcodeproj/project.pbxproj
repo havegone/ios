@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654153401774342A005A42BF /* TabBarItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6541533F1774342A005A42BF /* TabBarItemView.m */; };
+		6541534517743AC2005A42BF /* Bar-Graph-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6541534117743AC2005A42BF /* Bar-Graph-2.png */; };
+		6541534617743AC2005A42BF /* Basket.png in Resources */ = {isa = PBXBuildFile; fileRef = 6541534217743AC2005A42BF /* Basket.png */; };
+		6541534717743AC2005A42BF /* Beer.png in Resources */ = {isa = PBXBuildFile; fileRef = 6541534317743AC2005A42BF /* Beer.png */; };
+		6541534817743AC2005A42BF /* Money-Bag.png in Resources */ = {isa = PBXBuildFile; fileRef = 6541534417743AC2005A42BF /* Money-Bag.png */; };
 		65B0D5391772F5C800F6B90C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B0D5381772F5C800F6B90C /* UIKit.framework */; };
 		65B0D53B1772F5C800F6B90C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B0D53A1772F5C800F6B90C /* Foundation.framework */; };
 		65B0D53D1772F5C800F6B90C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B0D53C1772F5C800F6B90C /* CoreGraphics.framework */; };
@@ -18,9 +23,18 @@
 		65B0D54F1772F5C900F6B90C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B0D54E1772F5C900F6B90C /* Default-568h@2x.png */; };
 		65B0D5521772F5C900F6B90C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B0D5511772F5C900F6B90C /* ViewController.m */; };
 		65B0D5551772F5C900F6B90C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B0D5531772F5C900F6B90C /* ViewController.xib */; };
+		65B0D5611772F60300F6B90C /* MyTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B0D55C1772F60300F6B90C /* MyTabBarViewController.m */; };
+		65B0D5621772F60300F6B90C /* TomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B0D55E1772F60300F6B90C /* TomTabBar.m */; };
+		65B0D5631772F60300F6B90C /* TomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B0D5601772F60300F6B90C /* TomTabBarItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6541533E1774342A005A42BF /* TabBarItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarItemView.h; path = CustomTabBar/TabBarItemView.h; sourceTree = "<group>"; };
+		6541533F1774342A005A42BF /* TabBarItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarItemView.m; path = CustomTabBar/TabBarItemView.m; sourceTree = "<group>"; };
+		6541534117743AC2005A42BF /* Bar-Graph-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bar-Graph-2.png"; path = "image/Bar-Graph-2.png"; sourceTree = "<group>"; };
+		6541534217743AC2005A42BF /* Basket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Basket.png; path = image/Basket.png; sourceTree = "<group>"; };
+		6541534317743AC2005A42BF /* Beer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Beer.png; path = image/Beer.png; sourceTree = "<group>"; };
+		6541534417743AC2005A42BF /* Money-Bag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Money-Bag.png"; path = "image/Money-Bag.png"; sourceTree = "<group>"; };
 		65B0D5351772F5C800F6B90C /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B0D5381772F5C800F6B90C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		65B0D53A1772F5C800F6B90C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +51,12 @@
 		65B0D5501772F5C900F6B90C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		65B0D5511772F5C900F6B90C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		65B0D5541772F5C900F6B90C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		65B0D55B1772F60300F6B90C /* MyTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTabBarViewController.h; path = CustomTabBar/MyTabBarViewController.h; sourceTree = "<group>"; };
+		65B0D55C1772F60300F6B90C /* MyTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTabBarViewController.m; path = CustomTabBar/MyTabBarViewController.m; sourceTree = "<group>"; };
+		65B0D55D1772F60300F6B90C /* TomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TomTabBar.h; path = CustomTabBar/TomTabBar.h; sourceTree = "<group>"; };
+		65B0D55E1772F60300F6B90C /* TomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TomTabBar.m; path = CustomTabBar/TomTabBar.m; sourceTree = "<group>"; };
+		65B0D55F1772F60300F6B90C /* TomTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TomTabBarItem.h; path = CustomTabBar/TomTabBarItem.h; sourceTree = "<group>"; };
+		65B0D5601772F60300F6B90C /* TomTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TomTabBarItem.m; path = CustomTabBar/TomTabBarItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +73,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6541534917743ACC005A42BF /* image */ = {
+			isa = PBXGroup;
+			children = (
+				6541534117743AC2005A42BF /* Bar-Graph-2.png */,
+				6541534217743AC2005A42BF /* Basket.png */,
+				6541534317743AC2005A42BF /* Beer.png */,
+				6541534417743AC2005A42BF /* Money-Bag.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		65B0D52C1772F5C800F6B90C = {
 			isa = PBXGroup;
 			children = (
+				65B0D55B1772F60300F6B90C /* MyTabBarViewController.h */,
+				65B0D55C1772F60300F6B90C /* MyTabBarViewController.m */,
+				65B0D55D1772F60300F6B90C /* TomTabBar.h */,
+				65B0D55E1772F60300F6B90C /* TomTabBar.m */,
+				6541533E1774342A005A42BF /* TabBarItemView.h */,
+				6541533F1774342A005A42BF /* TabBarItemView.m */,
+				65B0D55F1772F60300F6B90C /* TomTabBarItem.h */,
+				65B0D5601772F60300F6B90C /* TomTabBarItem.m */,
 				65B0D53E1772F5C900F6B90C /* CustomTabBar */,
 				65B0D5371772F5C800F6B90C /* Frameworks */,
 				65B0D5361772F5C800F6B90C /* Products */,
@@ -96,6 +135,7 @@
 		65B0D53F1772F5C900F6B90C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6541534917743ACC005A42BF /* image */,
 				65B0D5401772F5C900F6B90C /* CustomTabBar-Info.plist */,
 				65B0D5411772F5C900F6B90C /* InfoPlist.strings */,
 				65B0D5441772F5C900F6B90C /* main.m */,
@@ -163,6 +203,10 @@
 				65B0D54D1772F5C900F6B90C /* Default@2x.png in Resources */,
 				65B0D54F1772F5C900F6B90C /* Default-568h@2x.png in Resources */,
 				65B0D5551772F5C900F6B90C /* ViewController.xib in Resources */,
+				6541534517743AC2005A42BF /* Bar-Graph-2.png in Resources */,
+				6541534617743AC2005A42BF /* Basket.png in Resources */,
+				6541534717743AC2005A42BF /* Beer.png in Resources */,
+				6541534817743AC2005A42BF /* Money-Bag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +220,10 @@
 				65B0D5451772F5C900F6B90C /* main.m in Sources */,
 				65B0D5491772F5C900F6B90C /* AppDelegate.m in Sources */,
 				65B0D5521772F5C900F6B90C /* ViewController.m in Sources */,
+				65B0D5611772F60300F6B90C /* MyTabBarViewController.m in Sources */,
+				65B0D5621772F60300F6B90C /* TomTabBar.m in Sources */,
+				65B0D5631772F60300F6B90C /* TomTabBarItem.m in Sources */,
+				654153401774342A005A42BF /* TabBarItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +311,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomTabBar/CustomTabBar-Prefix.pch";
 				INFOPLIST_FILE = "CustomTabBar/CustomTabBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +323,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomTabBar/CustomTabBar-Prefix.pch";
 				INFOPLIST_FILE = "CustomTabBar/CustomTabBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -298,6 +348,7 @@
 				65B0D55A1772F5C900F6B90C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

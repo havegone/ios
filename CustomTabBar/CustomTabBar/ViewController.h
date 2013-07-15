@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *lable;
+
+@property (strong,nonatomic) NSString* text;
+- (IBAction)chage:(id)sender;
+- (IBAction)cancel:(id)sender;
 
 @end
